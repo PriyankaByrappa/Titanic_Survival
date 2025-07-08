@@ -1,21 +1,17 @@
-🚢 Titanic Survival Prediction using Logistic Regression
-
-
+🚢 Titanic Survival Prediction using Logistic Regression and Decision Tree
 📌 Project Overview
-This machine learning project predicts passenger survival on the Titanic based on features like passenger class, age, gender, fare, and family relationships. It uses Logistic Regression, a classic supervised classification algorithm, to estimate survival probabilities.
+This machine learning project focuses on predicting the survival of Titanic passengers based on features like age, gender, passenger class, fare, and family relations. Two classification algorithms — Logistic Regression and Decision Tree — are applied and evaluated for their performance in identifying whether a passenger survived or not.
 
-The project is implemented using Python in Google Colab, and includes data cleaning, preprocessing, model training, evaluation, and confusion matrix visualization to assess performance.
-
-
+The project is developed using Python in Google Colab, featuring data cleaning, preprocessing, data visualization, model training, and performance evaluation.
 
 📁 Dataset
-Name: titanic.csv
+File Name: titanic.csv
 
 Source: Kaggle Titanic Dataset / DataScienceDojo GitHub
 
 Target Variable: Survived (0 = Did not survive, 1 = Survived)
 
-📊 Features Used:
+Attributes:
 Pclass (Passenger Class)
 
 Sex
@@ -35,85 +31,76 @@ Python 3
 
 Google Colab
 
-📚 Libraries:
+Libraries:
 pandas
 
 numpy
+
+scikit-learn
 
 matplotlib
 
 seaborn
 
-scikit-learn
-
-📈 ML Model
-Logistic Regression:
+📈 ML Models Used
+1. Logistic Regression
 A linear model used for binary classification (Survived or Not Survived).
+Evaluated using accuracy score and classification report.
 
-Evaluated using:
+2. Decision Tree Classifier
+A non-linear, tree-based model that splits data into decision rules.
+Evaluated using accuracy, confusion matrix, and classification report.
+
+🚀 Project Workflow
+Import and explore the dataset
+
+Clean and preprocess data (handle missing values, drop unused columns)
+
+Convert categorical features using one-hot encoding
+
+Split data into training and testing sets
+
+Train:
+
+Logistic Regression
+
+Decision Tree Classifier
+
+Evaluate model performance using:
 
 Accuracy score
 
 Confusion matrix
 
-Classification report (precision, recall, F1-score)
+Classification report
 
-🚀 Project Workflow
-Import libraries
-
-Load dataset from URL
-
-Drop irrelevant features (Name, Cabin, Ticket, etc.)
-
-Handle missing values (age with median, embarked with mode)
-
-Encode categorical features (Sex, Embarked)
-
-Split dataset into train and test sets
-
-Train logistic regression model
-
-Evaluate model performance
-
-Visualize confusion matrix
+Visualize confusion matrix using seaborn
 
 📊 Results
-Metric	Score
-Accuracy	81.0%
-Precision (0)	83%
-Recall (0)	86%
-F1-Score (1)	76%
+Model	Accuracy
+Logistic Regression	~81%
+Decision Tree	~82%
 
-🔹 Confusion Matrix:
-lua
-Copy
-Edit
-              Predicted
-             |  0  |  1
-           ---------------
-Actual  0   | 90  | 15
-        1   | 19  | 55
-📷 Sample Output
-
-![{BA71650B-D5A0-4AAC-8034-149DCE4508CF}](https://github.com/user-attachments/assets/36be0743-b474-4003-88a8-49e532729e6a)
-![{BE2845F1-B802-4316-93BA-A0CB17E2DE91}](https://github.com/user-attachments/assets/904a20f5-1101-4cb5-80c3-4f72b9c4a61d)
-
-
+Note: Accuracy may vary slightly depending on random state or data split.
 
 📌 How to Run
-Open the project notebook in Google Colab
+You can open this project in Google Colab and run all cells interactively.
+Ensure the titanic.csv file is uploaded or accessible via the given URL in the notebook.
 
-Upload or fetch the Titanic dataset
+📷 Sample Outputs
+Confusion Matrix
+![{B60B166B-6C19-462E-B82D-E26599D88DBB}](https://github.com/user-attachments/assets/66c8379e-2e6d-41f8-9be7-16da5662ae38)
 
-Run all cells to see preprocessing, training, and evaluation
+![{E64D8971-E408-4430-99A4-1F6BAAD6CB12}](https://github.com/user-attachments/assets/ca494487-f4a4-4f78-bda1-ec27c20f00fd)
 
-👉 Notebook Link: Click here to open in Colab
-(Replace with actual link)
+![{1DF3AACA-FB9D-41DC-8A0E-56D071E0133B}](https://github.com/user-attachments/assets/ac660ee5-e4c0-40b4-9cc6-5d01d52ed1cb)
+
+
 
 🧾 License
-This project is for educational use only and was created as part of a Python + Machine Learning internship.
+This project was created as part of a Python + Machine Learning internship.
+Educational use only.
 
 🙋‍♀️ Author
 Priyanka Byrappa B
-Intern – Python & Machine Learning
-
+Intern - Python & Machine Learning
