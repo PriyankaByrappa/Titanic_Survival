@@ -1,8 +1,10 @@
-**🚢** Titanic Survival Prediction using Logistic Regression****
-**📌 Project Overview**
-This machine learning project aims to predict the survival of passengers on the Titanic using logistic regression. It explores relationships between various features such as age, gender, passenger class, fare, and more to build a binary classifier.
+🚢 Titanic Survival Prediction using Logistic Regression
+📌 Project Overview
+This machine learning project predicts passenger survival on the Titanic based on features like passenger class, age, gender, fare, and family relationships. It uses Logistic Regression, a classic supervised classification algorithm, to estimate survival probabilities.
 
-The project includes data cleaning, preprocessing, training, and evaluation, along with confusion matrix visualization. It is developed in Python using Google Colab.
+The project is implemented using Python in Google Colab, and includes data cleaning, preprocessing, model training, evaluation, and confusion matrix visualization to assess performance.
+
+
 
 📁 Dataset
 Name: titanic.csv
